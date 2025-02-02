@@ -1,0 +1,12 @@
+version: '3'
+services:
+  react-app:
+    container_name: singh_rajvir_coding_assignment11
+    build: .
+    ports:
+      - "7775:3000"
+    volumes:
+      - .:/rajvir_singh_site
+      - /rajvir_singh_site/node_modules
+    stdin_open: true
+    tty: true
